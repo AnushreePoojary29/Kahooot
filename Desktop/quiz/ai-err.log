@@ -1,0 +1,117 @@
+Failed to parse result from AI. Original result: {
+  "1": {
+    "mcq": "What is the primary purpose of using a JSON Web Token (JWT) in Node.js?",
+    "options": {
+      "a": "To protect sensitive data from unauthorized access",
+      "b": "To authenticate and authorize users across multiple requests",
+      "c": "To improve performance by reducing database queries",
+      "d": "To send notifications to users via email or SMS"
+    },
+    "correct": "b"
+  },
+  "2": {
+    "mcq": "Consider the following code snippet using Express.js middleware to check if the user is authenticated:",
+    "options": {
+      "a": "function authenticate(req, res, next) { if (req.session.userID) return next(); res.status(401).send('Unauthorized'); }",
+      "b": "function authenticate(req, res, next) { if (!req.session.userID) return next(); res.status(401).send('Unauthorized'); }",
+      "c": "function authenticate(req, res, next) { if (req.session.userID) return next(); res.send('Hello, authenticated user!'); }",
+      "d": "function authenticate(req, res, next) { if (!req.session.userID) res.render('login.html'); }"
+    },
+    "correct": "a"
+  },
+  "3": {
+    "mcq": "What is the effect of using the req.body object in Node.js to access form data?",
+    "options": {
+      "a": "It allows you to access form data without using middleware",
+      "b": "It enables you to handle form data using JSON objects",
+      "c": "It requires you to use middleware like body-parser to parse the request body",
+      "d": "It is only used for accessing data from HTML forms"
+    },
+    "correct": "c"
+  },
+  "4": {
+    "mcq": "Consider the following code snippet using a middleware function to validate user input:",
+    "options": {
+      "a": "function validateInput(req, res, next) { if (req.body.name && req.body.email) return next(); res.status(400).send('Invalid request'); }",
+      "b": "function validateInput(req, res, next) { if (!req.body.name || !req.body.email) return next(); res.status(400).send('Invalid request'); }",
+      "c": "function validateInput(req, res, next) { if (req.body.name && req.body.email) res.status(400).send('Invalid request'); }",
+      "d": "function validateInput(req, res, next) { if (!req.body.name || !req.body.email) res.send('Hello, user!'); }"
+    },
+    "correct": "a"
+  },
+  "5": {
+    "mcq": "Which of the following middleware functions is responsible for parsing JSON data in Node.js?",
+    "options": {
+      "a": "express.bodyParser",
+      "b": "express.json",
+      "c": "express.urlencoded",
+      "d": "express.raw"
+    },
+    "correct": "b"
+  },
+  "6": {
+    "mcq": "Consider the following code snippet using a middleware function to redirect users to the login page:",
+    "options": {
+      "a": "app.get('/protected', authenticate, function(req, res) { res.redirect('/login'); })",
+      "b": "app.get('/protected', authenticate, function(req, res) { res.render('login.html'); })",
+      "c": "app.get('/protected', function(req, res) { res.redirect('/login'); })",
+      "d": "app.get('/protected', function(req, res) { res.render('login.html'); })"
+    },
+    "correct": "a"
+  },
+  "7": {
+    "mcq": "What is the effect of using the express.static middleware to serve static files in Node.js?",
+    "options": {
+      "a": "It enables you to serve only dynamic files",
+      "b": "It allows you to serve only static files",
+      "c": "It requires you to specify the root directory of the static files",
+      "d": "It is only used for serving images and stylesheets"
+    },
+    "correct": "b"
+  },
+  "8": {
+    "mcq": "Consider the following code snippet using a middleware function to validate user sessions:",
+    "options": {
+      "a": "function validateSession(req, res, next) { if (req.session.userID) return next(); res.status(401).send('Unauthorized'); }",
+      "b": "function validateSession(req, res, next) { if (!req.session.userID) return next(); res.status(401).send('Unauthorized'); }",
+      "c": "function validateSession(req, res, next) { if (req.session.userID) res.status(401).send('Unauthorized'); }",
+      "d": "function validateSession(req, res, next) { if (!req.session.userID) res.render('login.html'); }"
+    },
+    "correct": "b"
+  },
+  "9": {
+    "mcq": "What is the purpose of using the req.flash() function in Express.js to store flash messages?",
+    "options": {
+      "a": "To store permanent messages across multiple requests",
+      "b": "To store temporary messages that are cleared after a single request",
+      "c": "To display messages to users in a HTML page",
+      "d": "To redirect users to another page"
+    },
+    "correct": "b"
+  },
+  "10": {
+    "mcq": "Consider the following code snippet using a middleware function to check if the user has a valid session:",
+    "javascript": `
+      function validateSession(req, res, next) {
+        if (!req.session.userID) return res.redirect('/login');
+        next();
+      }
+
+      app.get('/protected', validateSession, function(req, res) {
+        res.send('Hello, authenticated user!');
+      });
+    `,
+    "options": {
+      "a": "The middleware function will always redirect users to the login page",
+      "b": "The middleware function will always allow users to access the protected route",
+      "c": "The middleware function will allow users to access the protected route if they have a valid session",
+      "d": "The middleware function will display a 404 error to users"
+    },
+    "correct": "c"
+  }
+}
+Parse error: SyntaxError: Unexpected token '`', ..."ascript": `
+      fu"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at generateHandler (C:\Users\asus\Desktop\quiz\Kahooot\ai-creator\src\controllers\mcqController.js:66:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

@@ -1,0 +1,4 @@
+Server running on port 5050
+Generating MCQs — count: 3, difficulty: Hard, prompt: "generate 3 debugging questions on JavaScript closures with code snippets"
+Generating MCQs — count: 10, difficulty: Medium, prompt: "Generate questions on JWT, Node.js, Middleware include 2 code snippets, 1 debugging questions and other technical questions"
+Generating MCQs — count: 10, difficulty: Medium, prompt: "Generate questions on JWT, Node.js, Middleware include 2 code snippets, 1 debugging questions and other technical questions"
